@@ -2,17 +2,15 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 
 @Component({
   selector: 'home',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterOutlet, 
-    BrowserModule, 
-    FormsModule,
-    ReactiveFormsModule,
+    RouterOutlet,
+    BrowserModule,
+    ImageSliderComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
